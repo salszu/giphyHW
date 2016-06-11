@@ -39,8 +39,8 @@ window.onload = function() {
                         newGif.attr('class', 'clicky');
                         newGif.attr('data-state', 'still');
                         newGif.attr('src', results[i].images.fixed_height.url);
-                        //newGif.attr('data-still', results[i].images.fixed_height_still.url);
-                        //newGif.attr('data-animate', results[i].images.fixed_height.url);
+                        newGif.attr('data-still', results[i].images.fixed_height_still.url);
+                        newGif.attr('data-animate', results[i].images.fixed_height.url);
 
                         gifDiv.append(p);
                         gifDiv.append(newGif);
