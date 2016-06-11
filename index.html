@@ -8,26 +8,32 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
-<body>
+<body style="background-image: url(http://www.cfau-pd.net//data/wallpapers/139/WDF_1806680.jpg)">
     <div class="container">
-        <div id="topTitle">
-            <h1>Giphy Generator</h1>
+        <!-- jumbotron -->
+        <div class="jumbotron col-lg-8 col-lg-offset-2">
+            <h1 class="text-center" id="headText"><strong>Giphy Generator</strong></h1>
+            <h3 class="text-center"></h3>
         </div>
+        <!-- gif row div -->
         <div id="row">
-            <div id="col-lg-6">
+            <!-- button gen -->
+            <div class="col-lg-9">
                 <div id="gifButtons"></div>
             </div>
+            <!-- button create -->
             <div>
-                <form class="col-lg-6" id="buttonCreate">
-                    <label for="gifInput">Add your own .gif's</label>
-                    <input type="text" id="reactionInput">
+                <form class="col-lg-3" id="buttonCreate">
+                    <label id="submitText" for="gifInput">Add your own .gif button!</label>
+                    <input type="text" id="newGif">
                     <br>
-                    <input id="createGif" type="submit" value="Submit">
+                    <input class="btn-danger" id="createGif" type="submit" value="Submit">
                 </form>
             </div>
         </div>
+        <!-- giphy gen -->
         <div class="row">
-            <div class="col-lg-10" id="giphyGen"></div>
+            <div class="col-lg-12" id="giphyGen"></div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
