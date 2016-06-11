@@ -1,14 +1,18 @@
 .jumbotron {
 	background-color:#191919;
 	color: #009fc7;
-	
+
 }
 
 #submitText {
-	color:white;
+	color:#009fc7;
 }
 
+#copyRight {
+	color:#009fc7;
+}
 body {
 	background-image: url(http://www.cfau-pd.net//data/wallpapers/139/WDF_1806680.jpg);
 
 }
+
