@@ -8,6 +8,12 @@ window.onload = function() {
         return false;
     });
 
+    $('.grid').masonry({
+      itemSelector: '.grid-item', // use a separate class for itemSelector, other than .col-
+      columnWidth: '.grid-sizer',
+      percentPosition: true
+});
+
     var premadeGif = ["fail", "kitty", "puppy", "space", "trippy", "overwatch", "xfiles", "spooky", "shrug", "snl", "dali", ];
 
     function createButtons() {
