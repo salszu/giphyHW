@@ -1,20 +1,5 @@
-window.onload = function() {
 
-
-    $('#createGif').on('click', function() {
-        premadeGif.push(newGif.value);
-        createButtons();
-        giphyClick();
-        return false;
-    });
-
-    $('.grid').masonry({
-      itemSelector: '.grid-item', // use a separate class for itemSelector, other than .col-
-      columnWidth: '.grid-sizer',
-      percentPosition: true
-});
-
-    var premadeGif = ["fail", "kitty", "puppy", "space", "trippy", "overwatch", "xfiles", "spooky", "shrug", "snl", "dali", ];
+    var premadeGif = ["fail", "kitty", "puppy", "space", "trippy", "overwatch", "xfiles", "spooky", "shrug", "snl", "dali"];
 
     function createButtons() {
         $('#gifButtons').empty();
@@ -22,7 +7,7 @@ window.onload = function() {
         for (var i = 0; i < premadeGif.length; i++) {
             $('#gifButtons').append('<button class="giphy btn-primary" data-state="still" data-reaction="' + premadeGif[i] + '">' + premadeGif[i] + '</button');
         }
-    };
+    }
 
     function giphyClick() {
         $('.giphy').on('click', function() {
@@ -55,14 +40,21 @@ window.onload = function() {
                     }
                 });
         });
-    };
+    }
 
 
+window.onload = function() {
+
+    $('#createGif').on('click', function() {
+        premadeGif.push(newGif.value);
+        createButtons();
+        giphyClick();
+        return false;
+    });
 
 
     createButtons();
     giphyClick();
-
 
 
 
