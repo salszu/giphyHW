@@ -15,3 +15,9 @@ body {
 	background-image: url(../images/backGround.jpg);
 
 }
+.grid-item { 
+	width: 25%; 
+}
+.grid-item--width2 {
+	width: 50%;
+}
